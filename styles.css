@@ -1,0 +1,61 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#gameArea {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+#defense {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.enemy {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bullet {
+    width: 5px;
+    height: 5px;
+    background-color: yellow;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#controls button {
+    margin-right: 10px;
+}
+
+#defense {
+    width: 40px; /* Increased size of red dot */
+    height: 40px; /* Increased size of red dot */
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 20px); /* Centering the dot */
+    left: calc(50% - 20px); /* Centering the dot */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure red dot is on top of grey area */
+}
